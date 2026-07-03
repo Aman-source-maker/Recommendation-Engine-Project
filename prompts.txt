@@ -1,0 +1,29 @@
+how was the wheather
+
+wheather in delhi
+
+search a good movie recomdation data set
+
+download movielens and keep in the desktop folder and name it Movielens
+
+create a python notebook file and which can use this dataset and produce the result for movie recomdation engine basis previous movie watched
+
+great now move the python notebook and python dataset in a desktop folder and navigate to that folder
+
+now use the python notbook to export a model which can be used for a netflix like website.once model is exported create a backend which can use this model
+
+now create a front end which will looklike netflix and which will have all the movies available in the dataset, import only 10 movies for now add their thumbnail no need of adding the movie video since that is not there in scope of work,when i click on any movie it should show the thumbnail on the watchpage and below it should show related movie and that related movie should come from the recomdation backend
+
+thumbnails are not proper can you try searching on google and download
+
+no don't do that download a thumbnail for all the movies.
+
+leave
+
+let it be the way it was earlier
+
+how many tokens have i used?
+
+how to put API in opencode
+
+write the prompts that i gave to you in a text file name it as prompts.txt
