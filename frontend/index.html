@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StreamFlix Movie Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <button class="brand" id="homeButton" type="button" aria-label="Go home">STREAMFLIX</button>
+      <nav class="nav">
+        <button class="nav-button active" type="button">Home</button>
+        <button class="nav-button" type="button">Movies</button>
+        <button class="nav-button" type="button">My List</button>
+      </nav>
+      <div class="profile" aria-label="Profile">A</div>
+    </header>
+
+    <main id="app"></main>
+
+    <template id="homeTemplate">
+      <section class="hero">
+        <div class="hero-backdrop"></div>
+        <div class="hero-content">
+          <p class="eyebrow">MovieLens recommendations</p>
+          <h1 id="heroTitle"></h1>
+          <p id="heroMeta" class="hero-meta"></p>
+          <div class="hero-actions">
+            <button id="heroPlay" class="primary-action" type="button">Play</button>
+            <button id="heroInfo" class="secondary-action" type="button">More Info</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band">
+        <h2>Imported Movies</h2>
+        <div id="movieGrid" class="movie-grid"></div>
+      </section>
+    </template>
+
+    <template id="watchTemplate">
+      <section class="watch-page">
+        <button id="backButton" class="back-button" type="button">Back</button>
+        <div class="watch-layout">
+          <div class="watch-art">
+            <img id="watchPoster" alt="">
+          </div>
+          <div class="watch-detail">
+            <p class="eyebrow">Now watching</p>
+            <h1 id="watchTitle"></h1>
+            <p id="watchGenres" class="watch-genres"></p>
+            <p class="watch-copy">This preview uses the MovieLens recommender model. Video playback is intentionally outside the current scope.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-band related-band">
+        <h2>More Like This</h2>
+        <div id="relatedStatus" class="status-text">Loading recommendations...</div>
+        <div id="relatedGrid" class="movie-grid"></div>
+      </section>
+    </template>
+
+    <script src="movies.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
